@@ -17,10 +17,10 @@
     <div class="col-12">
         <div class="d-flex justify-content-between align-items-center mb-4">
             <h2>
-                <i class="fas fa-database text-primary"></i>
+                <i class="fas fa-database text-dark"></i>
                 Backup y Restauración
             </h2>
-            <a href="{{ url_for('admin.index') }}" class="btn btn-outline-primary">
+            <a href="{{ url_for('admin.index') }}" class="btn btn-primary bg-cards">
                 <i class="fas fa-arrow-left"></i> Volver
             </a>
         </div>
@@ -29,7 +29,7 @@
             <!-- Backup de Datos -->
             <div class="col-md-6">
                 <div class="card mb-4">
-                    <div class="card-header bg-success text-white">
+                    <div class="card-header bg-cards text-white">
                         <h5 class="card-title mb-0">
                             <i class="fas fa-save"></i>
                             Backup de Datos
@@ -59,7 +59,7 @@
                                       placeholder="Descripción del backup..."></textarea>
                         </div>
 
-                        <button class="btn btn-success w-100" id="btn-backup">
+                        <button class="btn btn-primary bg-cards w-100" id="btn-backup">
                             <i class="fas fa-download"></i> Generar Backup
                         </button>
                     </div>
@@ -69,7 +69,7 @@
             <!-- Restauración -->
             <div class="col-md-6">
                 <div class="card mb-4">
-                    <div class="card-header bg-warning text-dark">
+                    <div class="card-header bg-cards2 text-white">
                         <h5 class="card-title mb-0">
                             <i class="fas fa-upload"></i>
                             Restauración
@@ -101,7 +101,7 @@
                             </div>
                         </div>
 
-                        <button class="btn btn-warning w-100" id="btn-restore" disabled>
+                        <button class="btn btn-success bg-cards2 w-100" id="btn-restore" >
                             <i class="fas fa-upload"></i> Restaurar Sistema
                         </button>
                     </div>

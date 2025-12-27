@@ -20,7 +20,7 @@
                 <i class="fas fa-sliders-h text-primary"></i>
                 Configuración del Sistema
             </h2>
-            <a href="{{ url_for('admin.index') }}" class="btn btn-outline-primary">
+            <a href="{{ url_for('admin.index') }}" class="btn btn-primary bg-cards">
                 <i class="fas fa-arrow-left"></i> Volver
             </a>
         </div>
@@ -28,9 +28,9 @@
         <form method="POST" action="{{ url_for('admin.configuracion') }}">
             <div class="row">
                 <!-- Umbrales de Riesgo -->
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <div class="card mb-4">
-                        <div class="card-header bg-warning text-dark">
+                        <div class="card-header bg-cards text-white">
                             <h5 class="card-title mb-0">
                                 <i class="fas fa-exclamation-triangle"></i>
                                 Umbrales de Riesgo
@@ -67,9 +67,9 @@
                 </div>
 
                 <!-- Pesos de Factores - ACTUALIZADO A 3 FACTORES -->
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <div class="card mb-4">
-                        <div class="card-header bg-info text-white">
+                        <div class="card-header bg-cards2 text-white">
                             <h5 class="card-title mb-0">
                                 <i class="fas fa-balance-scale"></i>
                                 Pesos de Factores - Semestre Actual
@@ -129,13 +129,13 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            <!-- </div> -->
 
             <!-- Parámetros Académicos -->
-            <div class="row">
-                <div class="col-md-6">
+            <!-- <div class="row"> -->
+                <div class="col-md-4">
                     <div class="card mb-4">
-                        <div class="card-header bg-success text-white">
+                        <div class="card-header bg-cards text-white">
                             <h5 class="card-title mb-0">
                                 <i class="fas fa-graduation-cap"></i>
                                 Parámetros Académicos
@@ -168,12 +168,12 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    <!-- </div> -->
                 </div>
 
-                <div class="col-md-6">
+                <!-- <div class="col-md-2"> -->
                     <div class="card mb-4">
-                        <div class="card-header bg-primary text-white">
+                        <div class="card-header bg-cards2 text-white">
                             <h5 class="card-title mb-0">
                                 <i class="fas fa-calendar-alt"></i>
                                 Semestre
@@ -199,10 +199,10 @@
                     <div class="card">
                         <div class="card-body">
                             <div class="d-flex justify-content-between">
-                                <a href="{{ url_for('admin.index') }}" class="btn btn-secondary">
+                                <a href="{{ url_for('admin.index') }}" class="btn btn-secondary bg-cards2 ">
                                     <i class="fas fa-times"></i> Cancelar
                                 </a>
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-primary bg-cards">
                                     <i class="fas fa-save"></i> Guardar Configuración
                                 </button>
                             </div>
