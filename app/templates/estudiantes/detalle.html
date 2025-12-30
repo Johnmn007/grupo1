@@ -9,7 +9,7 @@
             <!-- Información del Estudiante -->
             <div class="col-md-6">
                 <div class="card">
-                    <div class="card-header bg-primary text-white">
+                    <div class="card-header bg-cards text-white">
                         <h5 class="card-title mb-0">
                             <i class="fas fa-user-graduate"></i>
                             Información del Estudiante
@@ -57,7 +57,7 @@
             <!-- Historial de Riesgo -->
             <div class="col-md-6">
                 <div class="card">
-                    <div class="card-header bg-warning text-dark">
+                    <div class="card-header bg-cards2 text-dark">
                         <h5 class="card-title mb-0">
                             <i class="fas fa-chart-line"></i>
                             Seguimiento de Riesgo Académico
@@ -110,12 +110,12 @@
         <div class="row mt-4">
             <div class="col-12">
                 <div class="d-flex gap-2">
-                    <a href="{{ url_for('estudiantes.index') }}" class="btn btn-secondary">
+                    <a href="{{ url_for('estudiantes.index') }}" class="btn btn-secondary bg-cards0">
                         <i class="fas fa-arrow-left"></i> Volver a la lista
                     </a>
                      <!-- BOTONES NUEVOS: Editar y Eliminar -->
             <a href="{{ url_for('estudiantes.editar', estudiante_id=estudiante.id) }}" 
-               class="btn btn-warning">
+               class="btn btn-primary bg-cards2">
                 <i class="fas fa-edit"></i> Editar Estudiante
             </a>
             <form method="POST" action="{{ url_for('estudiantes.eliminar', estudiante_id=estudiante.id) }}" 
@@ -124,7 +124,7 @@
                     <i class="fas fa-trash"></i> Eliminar Estudiante
                 </button>
             </form>
-                    <a href="{{ url_for('estudiantes.en_riesgo') }}" class="btn btn-warning">
+                    <a href="{{ url_for('estudiantes.en_riesgo') }}" class="btn btn-primary bg-cards3 text-dark">
                         <i class="fas fa-exclamation-triangle"></i> Ver todos en riesgo
                     </a>
                 </div>
